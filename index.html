@@ -44,6 +44,18 @@
             text-align: center;
         }
 
+        /* --- CSS TAMBAHAN UNTUK LOGO --- */
+        .logo-container {
+            margin-bottom: 25px; /* Memberi jarak lebih besar */
+        }
+
+        .logo-container img {
+            max-height: 100px; /* Mengatur tinggi logo */
+            width: auto;
+            object-fit: contain;
+        }
+        /* ------------------------------- */
+
         header h1 {
             font-size: 24px;
             color: var(--biru-gelap);
@@ -117,6 +129,9 @@
 
     <div class="container">
         <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo Kecamatan">
+            </div>
             <h1>Sistem Kepegawaian Kecamatan</h1>
             <p>Silakan pilih menu di bawah untuk mengakses layanan (Akan membuka tab baru)</p>
         </header>
@@ -128,7 +143,6 @@
             </a>
 
             <a href="https://docs.google.com/spreadsheets/d/1E4Qy0mubFsFjoFlakJ93vH-CYbc2okf40_iM6fChXn4/edit?gid=855762182#gid=855762182" target="_blank" class="menu-card">
-                <i class="fa-solid fa-comments-edge"></i>
                 <i class="fa-solid fa-bullhorn"></i>
                 <span>Aduan Pelayanan</span>
             </a>
